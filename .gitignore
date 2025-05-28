@@ -1,0 +1,73 @@
+# Ignora i file generati dalla compilazione C++
+# --------------------------------------------------
+*.o       # File oggetto
+*.obj     # File oggetto (Windows)
+*.ko      # Moduli del kernel (Linux)
+*.lo      # Librerie condivise (Linux)
+*.la      # Librerie condivise (Linux)
+*.so      # Librerie condivise (Linux)
+*.a       # Librerie statiche (Linux)
+*.lib     # Librerie statiche (Windows)
+*.dll     # Librerie dinamiche (Windows)
+*.exe     # Eseguibili (Windows)
+*.out     # Eseguibili (Linux/macOS)
+*.app     # Applicazioni macOS
+*.dSYM/   # Simboli di debug macOS
+*.map     # File mappa
+*.ilk     # File incrementali del linker (Windows)
+*.pdb     # Database dei programmi (Windows)
+
+# File temporanei e di backup
+# --------------------------------------------------
+*~        # File di backup di editor come Vim
+*.bak     # File di backup generici
+*.tmp     # File temporanei
+*.swp     # File di swap di Vim
+*.swo     # File di swap di Vim
+*.log     # File di log
+*.DS_Store # File specifici di macOS
+Thumbs.db # File specifici di Windows
+
+# Cartelle e file di build comuni
+# --------------------------------------------------
+build/    # Cartella di output della build (es. CMake, Make)
+bin/      # Cartella per gli eseguibili
+obj/      # Cartella per i file oggetto
+dist/     # Cartella di distribuzione
+
+# File e cartelle specifiche di Visual Studio Code
+# --------------------------------------------------
+.vscode/  # Cartella delle impostazioni di VS Code
+# Escludi la cartella .vscode/ in generale.
+# Se ci sono file specifici in .vscode/ che VUOI tracciare (es. settings.json condivisi),
+# puoi includerli esplicitamente dopo aver escluso la cartella intera.
+# Esempio:
+# !.vscode/settings.json
+# !.vscode/tasks.json
+# !.vscode/launch.json
+
+.history/ # Cartella di backup delle modifiche dei file (estensione Local History)
+
+# File di configurazione di CMake (se usi CMake)
+# --------------------------------------------------
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+Makefile
+CTestTestfile.cmake
+_deps/
+
+# File di configurazione di Make (se non usi CMake)
+# --------------------------------------------------
+# Makefile # Se il tuo Makefile è generato, potresti volerlo ignorare.
+#          # Se è scritto a mano e vuoi tracciarlo, commenta questa riga.
+
+# Dipendenze esterne (se gestite localmente)
+# --------------------------------------------------
+# vendor/
+# third_party/
+
+# File di crash dump
+# --------------------------------------------------
+*.dmp     # File di dump di memoria (Windows)
+core      # Core dump (Linux/macOS)
